@@ -7,4 +7,8 @@ class LibraryList extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  
+}
+
 export default connect()(LibraryList)
