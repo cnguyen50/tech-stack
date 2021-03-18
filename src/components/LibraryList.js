@@ -4,8 +4,11 @@ import { connect } from 'react-redux'
 
 class LibraryList extends Component {
   render() {
-    console.log(this.props)
-    return;
+    return (
+      <FlatList 
+        
+      />
+    )
   }
 }
 
