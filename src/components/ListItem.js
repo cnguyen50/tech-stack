@@ -4,9 +4,15 @@ import { Text } from 'react-native'
 
 class ListItem extends Component {
   render() {
-    <CardSection>
-      <Text>{this.props.library.title}</Text>
-    </CardSection>
+    const { titleStyle } = styles
+
+    return (
+      <CardSection>
+        <Text style={titleStyle}>
+          {this.props.library.title}
+        </Text>
+      </CardSection>
+    )
   }
 }
 
