@@ -7,6 +7,7 @@ import * as actions from '../actions'
 class ListItem extends Component {
   render() {
     const { titleStyle } = styles
+    const { id, title } = this.props.library
 
     return (
       <TouchableWithoutFeedback
