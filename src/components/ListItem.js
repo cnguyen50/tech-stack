@@ -9,7 +9,9 @@ class ListItem extends Component {
     const { titleStyle } = styles
 
     return (
-      <TouchableWithoutFeedback>
+      <TouchableWithoutFeedback
+        onPress={() => this.props.selectLibrary(id)}
+      >
         <View>
           <CardSection>
             <Text style={titleStyle}>
