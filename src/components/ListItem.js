@@ -16,7 +16,7 @@ class ListItem extends Component {
         <View>
           <CardSection>
             <Text style={titleStyle}>
-              {this.props.library.title}
+              {title}
             </Text>
           </CardSection>
         </View>
