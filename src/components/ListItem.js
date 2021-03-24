@@ -5,6 +5,13 @@ import { connect } from './common'
 import * as actions from '../actions'
 
 class ListItem extends Component {
+  renderDescription() {
+    if (this.props.library.id === this.props.selectedLibraryId) {
+      return (
+        <Text>{this.props.library.description}</Text>
+      )
+    }
+  }
   render() {
     const { titleStyle } = styles
     const { id, title } = this.props.library
