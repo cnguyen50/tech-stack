@@ -6,9 +6,10 @@ import * as actions from '../actions'
 
 class ListItem extends Component {
   renderDescription() {
-    if (this.props.library.id === this.props.selectedLibraryId) {
+    const { library, selectedLibraryId } = this.props
+    if (library.id === selectedLibraryId) {
       return (
-        <Text>{this.props.library.description}</Text>
+        <Text>{library.description}</Text>
       )
     }
   }
