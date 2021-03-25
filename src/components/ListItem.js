@@ -5,6 +5,7 @@ import { connect } from './common'
 import * as actions from '../actions'
 
 class ListItem extends Component {
+
   renderDescription() {
     const { library, selectedLibraryId } = this.props
     if (library.id === selectedLibraryId) {
@@ -13,6 +14,7 @@ class ListItem extends Component {
       )
     }
   }
+
   render() {
     const { titleStyle } = styles
     const { id, title } = this.props.library
@@ -41,7 +43,7 @@ const styles = {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state, ownProps) => {
   return { selectedLibraryId: state.selectedLibraryId }
 }
 
